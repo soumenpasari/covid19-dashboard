@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Navbar = ({title}) => {
     return (
-        <nav className='navbar is-dark'>
+        <nav className='navbar is-black'>
             <div className='container'>
                 <div className='navbar-brand'>
                     <span className='navbar-item'>
-                        <FontAwesomeIcon icon='coffee' />
+                        <FontAwesomeIcon icon='virus' />
                     </span>
                     <span className='navbar-item'>
                         {title}
@@ -23,5 +23,5 @@ Navbar.prototypes = {
     title: PropTypes.string.isRequired,
 }
 Navbar.defaultProps = {
-    title: 'C-19 DASH'
+    title: 'C-19'
 }

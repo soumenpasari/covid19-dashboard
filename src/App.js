@@ -4,17 +4,19 @@ import 'bulma/css/bulma.min.css'
 
 // font awesome component and creating a library
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faVirus } from '@fortawesome/free-solid-svg-icons';
 
 // importing components
 import {Navbar} from './components/Navbar';
+import {Dashboard} from './components/Dashboard';
 
-library.add(faCheckSquare, faCoffee)
+library.add(faVirus)
 
 function App() {
   return (
     <Fragment>
       <Navbar />
+      <Dashboard />
     </Fragment>
   );
 }
