@@ -1,10 +1,14 @@
 import React, {Fragment} from 'react';
 import './App.css';
+import 'bulma/css/bulma.min.css'
+
+// importing components
+import {Navbar} from './components/Navbar';
 
 function App() {
   return (
     <Fragment>
-      <h1>Covid19 dashboard</h1>
+      <Navbar />
     </Fragment>
   );
 }
