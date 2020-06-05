@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import 'bulma/css/bulma.min.css'
+
+// font awesome component and creating a library
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faVirus } from '@fortawesome/free-solid-svg-icons';
+
+// importing components
+import {Navbar} from './components/Navbar';
+import {Dashboard} from './components/Dashboard';
+
+library.add(faVirus)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar />
+      <Dashboard />
+    </Fragment>
   );
 }
 
