@@ -1,13 +1,11 @@
 import React from 'react';
 
-const columnNames = ['id','Country','Active cases','Recovered','Deaths'];
-
-export const DataTableHead = () => {
+export const DataTableHead = ({header}) => {
     return (
         <thead>
             <tr>
-                {columnNames.map(column => (
-                    <th>{column}</th>
+                {header.map((column,index) => (
+                    <th key={index}>{column}</th>
                 ))}
             </tr>
         </thead>

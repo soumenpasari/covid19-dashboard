@@ -1,14 +1,22 @@
 .table thead th {
-    color: rgb(16, 190, 103) !important;
+    color : #69757a !important;
     font-weight: 430;
 }
 .table thead, .box.has-background-grad, .table {
-    background-color: transparent !important;
-    background-image: linear-gradient(120deg, rgba(18, 177, 116, 0.185),rgb(7, 7, 7)) !important;
+    background-color: #151d33 !important;
 }
 .has-text-cyan {
-    color: rgb(16, 190, 103) !important;
+    color : #69757a !important;
 }
 .table td, .table th {
     border: 1px solid rgba(10, 10, 10, 0.185) !important;
+}
+.hero.is-black{
+    background-color: #161625 !important;
+}
+.hero .title {
+    color: #ff073a !important;
+}
+.navbar.is-black{
+    background-color: #1e1e30 !important;
 }
