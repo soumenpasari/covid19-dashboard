@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // icon component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const DashboardTitle = ({title, icon}) => {
+export const DashboardTitle = ({title, icon, onTitleClick}) => {
     return (
         <div className='column is-3'>
             <h2 className='title is-3'>

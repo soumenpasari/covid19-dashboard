@@ -3,7 +3,7 @@ import './App.css';
 import 'bulma/css/bulma.min.css';
 // import Axios from 'axios';
 
-import {GlobalContext} from './context/GlobalState';
+import Store from './context/Store';
 
 // font awesome component and creating a library
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,10 +17,10 @@ library.add(faVirus)
 
 function App() {
   return (
-    <GlobalContext>
+    <Store>
       <Navbar />
       <Dashboard />
-    </GlobalContext>
+    </Store>
   );
 }
 
