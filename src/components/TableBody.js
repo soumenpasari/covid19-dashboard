@@ -1,10 +1,17 @@
-import React from 'react'
-import { TableRow } from './TableRow'
+import React, {useContext} from 'react';
+import { TableRow } from './TableRow';
+
+import { Context } from '../context/Store';
 
 export const TableBody = () => {
+    const [state,dispatch] = useContext(Context);
+    const stateData = state.stateData.statewise;
+    
     return (
         <tbody>
-            <TableRow />
+            {stateData && stateData.map( (stateWiseData,index) => (
+                <TableRow rowData={stateWiseData} key={index} />
+            ) )}
         </tbody>
     )
 }
