@@ -1,11 +1,11 @@
 import React from 'react'
-import { Filter } from './Filter'
 import { DataTable } from './DataTable'
+import { CaseCounter } from './CaseCounter'
 
 export const DashboardContent = () => {
     return (
         <div className='column is-9'>
-            <Filter />
+            <CaseCounter />
             <DataTable />
         </div>
     )

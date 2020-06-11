@@ -1,6 +1,9 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
-import 'bulma/css/bulma.min.css'
+import 'bulma/css/bulma.min.css';
+// import Axios from 'axios';
+
+import Store from './context/Store';
 
 // font awesome component and creating a library
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -14,10 +17,10 @@ library.add(faVirus)
 
 function App() {
   return (
-    <Fragment>
+    <Store>
       <Navbar />
       <Dashboard />
-    </Fragment>
+    </Store>
   );
 }
 

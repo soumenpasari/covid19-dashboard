@@ -23,5 +23,5 @@ Navbar.prototypes = {
     title: PropTypes.string.isRequired,
 }
 Navbar.defaultProps = {
-    title: 'C-19'
+    title: 'C-19 India'
 }
