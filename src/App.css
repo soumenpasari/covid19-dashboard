@@ -1,12 +1,18 @@
 .table thead th {
-    color : #69757a !important;
+    color : #fff !important;
     font-weight: 430;
 }
 .table thead, .box.has-background-grad, .table {
     background-color: #151d33 !important;
 }
+.box.has-background-grad hr {
+    background-color: #161625 !important;
+}
 .has-text-cyan {
     color : #69757a !important;
+}
+.has-text-custom-blue {
+    color: #007bff !important;
 }
 .table td, .table th {
     border: 1px solid rgba(10, 10, 10, 0.185) !important;

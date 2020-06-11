@@ -2,7 +2,8 @@ import React, {createContext, useReducer} from 'react';
 import Reducer from './Reducer';
 
 const initialState = {
-    stateData : []
+    stateData : [],
+    indiaTotalData : []
 }
 
 const Store = ({children}) => {
