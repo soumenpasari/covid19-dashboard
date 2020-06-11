@@ -5,6 +5,11 @@ const Reducer = (state,action) => {
                 ...state,
                 stateData : action.payload
             }
+        case 'UPDATE_TOTAL_INDIA_CASE':
+            return {
+                ...state,
+                indiaTotalData : action.payload
+            }
         default:
             return state;
     }

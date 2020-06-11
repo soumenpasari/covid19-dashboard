@@ -10,7 +10,12 @@ export const Dashboard = () => {
     useEffect(() => {
         const getApiData = async () => {
             const res = await Axios.get('https://api.covid19india.org/data.json');
-            dispatch({type:'UPDATE_STATE_DATA', payload:res.data});
+            // setting india total data
+            dispatch({type:'UPDATE_TOTAL_INDIA_CASE', payload:res.data.statewise[0]});
+            // setting state data
+            let stateData = res.data.statewise;
+            stateData.shift();
+            dispatch({type:'UPDATE_STATE_DATA', payload:stateData});
         }
         getApiData();
     },[]);

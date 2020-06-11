@@ -5,7 +5,7 @@ import { TableBody } from './TableBody';
 export const DataTable = () => {
 
     // declaring table headers
-    const columnNames = ['State','Active cases','Recovered','Deaths'];
+    const columnNames = ['State \\ UT','Confirmed','Active cases','Recovered','Deaths'];
     
     return (
         <table className='table is-fullwidth'>
