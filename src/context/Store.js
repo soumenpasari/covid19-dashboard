@@ -3,7 +3,8 @@ import Reducer from './Reducer';
 
 const initialState = {
     stateData : [],
-    indiaTotalData : []
+    indiaTotalData : [],
+    isDataLoaded : false
 }
 
 const Store = ({children}) => {
