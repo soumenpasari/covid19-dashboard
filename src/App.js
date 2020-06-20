@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import 'bulma/css/bulma.min.css';
 // import Axios from 'axios';
@@ -18,8 +19,16 @@ library.add(faVirus)
 function App() {
   return (
     <Store>
-      <Navbar />
-      <Dashboard />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' render={props => (
+            <Fragment>
+              <Dashboard />
+            </Fragment>
+          )} />
+        </Switch>
+      </Router>
     </Store>
   );
 }
