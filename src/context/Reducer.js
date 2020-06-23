@@ -10,6 +10,11 @@ const Reducer = (state,action) => {
                 ...state,
                 indiaTotalData : action.payload
             }
+        case 'UPDATE_LOADING_STATE':
+            return {
+                ...state,
+                isDataLoaded: action.payload
+            }
         default:
             return state;
     }
