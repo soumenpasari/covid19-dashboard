@@ -6,6 +6,7 @@ export const Loader = () => {
             <div className='column is-half'>
                 <center>
                     <button className='button is-dark is-loading' >Loading...</button>
+                    <br/>
                     <span>Loading ...</span>
                 </center>
             </div>
