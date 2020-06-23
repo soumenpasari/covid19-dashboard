@@ -18,7 +18,9 @@ export const About = () => {
                     <p>
                         You can find this project code base on github. This is under MIT
                         License.<br/>
-                        <a href='/' className='button is-dark is-small'>
+                        <a href='https://github.com/soumenpasari/covid19-dashboard' 
+                        target='_blank' rel='noopener noreferrer'
+                        className='button is-dark is-small'>
                             <span className='icon is-small'>
                                 <FontAwesomeIcon icon='rocket' />
                             </span>
